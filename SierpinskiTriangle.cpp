@@ -94,4 +94,8 @@ void SierpinskiTriangle::draw(){
  window.display();
 }
 
+vector<sf::Vector2f> SierpinskiTriangle::getListenters() const{
+    return points; 
+}
+
 #endif
