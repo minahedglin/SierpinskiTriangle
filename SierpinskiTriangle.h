@@ -23,7 +23,7 @@ public:
     SierpinskiTriangle();
 
     void run();
-   
+   vector<sf::Vector2f> getListeners() const;
 
 private:
     
