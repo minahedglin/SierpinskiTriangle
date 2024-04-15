@@ -23,9 +23,7 @@ public:
     SierpinskiTriangle();
 
     void run();
-    void handle_events();
-    void generate_points();
-    void draw();
+   
 
 private:
     
