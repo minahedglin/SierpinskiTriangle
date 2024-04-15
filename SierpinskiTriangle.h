@@ -17,13 +17,14 @@ to your header files under the Additional Include Directories section.
 
 using namespace std;
 
+using namespace sf;
 class SierpinskiTriangle
 {
 public:
     SierpinskiTriangle();
 
     void run();
-   vector<sf::Vector2f> getListeners() const;
+   vector<Vector2f> getListeners() const;
 
 private:
     
@@ -31,12 +32,12 @@ private:
     /*FIX:In Component::GetListeners you are returning the address of a function local variable, 
     one that immediately goes out of scope and is destructed. 
     You would either need to make it not function local or not return the pointer.*/
-     vector<sf::Vector2f> vertices;
-    vector<sf::Vector2f> points;
-    sf::RenderWindow window;
+     vector<Vector2f> vertices;
+    vector<Vector2f> points;
+    RenderWindow window;
    
-    sf::Font font;
-    sf::Text instructionText;
+    Font font;
+    Text instructionText;
      
     void handle_events();
     void generate_points();
