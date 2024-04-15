@@ -12,7 +12,7 @@ to your header files under the Additional Include Directories section.
 
 
 #include <iostream>
-#include <vector>
+#include <vector>  
 #include <random>
 
 using namespace std;
@@ -23,6 +23,9 @@ public:
     SierpinskiTriangle();
 
     void run();
+    void handle_events();
+    void generate_points();
+    void draw();
 
 private:
     
